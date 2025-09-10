@@ -1,11 +1,11 @@
 <?php
-if ($argc < 4) {
-    echo "Uso: php calculadora.php numero1 operador numero2\n";
-    echo "Exemplo: php calculadora.php 10 + 5\n";
-    exit;
+if ($argc < 4) { "<br>";
+    echo "Uso: php calculadora.php numero1 operador numero2\n" . "<br>";
+    echo "Exemplo: php calculadora.php 10 + 5\n" . "<br>";
+    exit; 
 }
 
-$a = (float)$argv[1];
+$a = (float)$argv[1];   
 $op = $argv[2];
 $b = (float)$argv[3];
 

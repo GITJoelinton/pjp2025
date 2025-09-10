@@ -1,0 +1,5 @@
+<?php
+for ($i=1; $i<=50; $i++){
+    echo "o numero é $i\n";
+}
+
