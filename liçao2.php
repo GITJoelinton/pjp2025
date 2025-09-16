@@ -87,3 +87,15 @@ if ($j % 2 == 0) {
 }
 echo "Total de números pares: $pares\n";
 echo "Total de números ímpares: $inpares\n";
+$total = $pares + $inpares;
+echo "Total de números digitados: $total\n";
+$negativos = 0;
+$positivos = 0;
+if ($total < 0) {
+    $negativos++;
+} else {
+    $positivos++;
+}
+count($total);
+echo "Total de números positivos: $positivos\n";
+echo "Total de números negativos: $negativos\n";
