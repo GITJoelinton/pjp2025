@@ -31,7 +31,7 @@ $alunos = $_SESSION['alunos'] ?? [];
 <p>Nenhum aluno cadastrado.</p>
 <?php endif; ?>
 
-<p><a href="cadastro.php">Cadastrar novo aluno</a></p>
+<p><a href="showe.php">Cadastrar novo aluno</a></p>
 
 </body>
 </html>

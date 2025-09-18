@@ -1,4 +1,3 @@
-
 <?php
 function limpar($v){ return htmlspecialchars(trim($v)); }
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') { http_response_code(405); exit('Método inválido'); }
