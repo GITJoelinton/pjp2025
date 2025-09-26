@@ -1,0 +1,37 @@
+<?php
+session_start();
+
+$alunos = $_SESSION['alunos'] ?? [];
+?>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Lista de Alunos</title>
+</head>
+<body>
+
+<h1>Alunos Cadastrados</h1>
+
+<?php if (!empty($alunos)): ?>
+<table borde="1" cellpadding="5" cellspacing="0">
+    <tr>
+        <th>Nome</th>
+        <th>Hora do Cadastro</th>
+    </tr>
+    <?php foreach ($alunos as $aluno): ?>
+    <tr>
+        <td><?= $aluno['nome'] ?></td>
+        <td><?= $aluno['hora'] ?></td>
+    </tr>
+    <?php endforeach; ?>
+</table>
+<?php else: ?>
+<p>Nenhum aluno cadastrado.</p>
+<?php endif; ?>
+
+<p><a href="showe.php">Cadastrar novo aluno</a></p>
+
+</body>
+</html>
