@@ -22,9 +22,41 @@ EXERCÍCIOS PHP - LISTA DE TAREFAS
 
 10. Crie uma função que receba dois números e retorne o maior.
 */
-$nome="jota";
-$cidade="natal";
-$idade=17;
-echo"moro na cidade de".$cidade;
-echo "meu nome e ".$nome;
-echo "minha idade e " .$idade;
+/*
+$nome = "jota";
+$cidade = "natal";
+$idade = 17;
+
+echo "Moro na cidade de " . $cidade . "<br>";
+echo "Meu nome é " . $nome . "<br>";
+echo "Minha idade é " . $idade . "<br>";
+?>*/
+echo "Digite o número inicial: ";
+$inicio = (int)trim(fgets(STDIN));
+
+echo "Digite o número final: ";
+$fim = (int)trim(fgets(STDIN));
+
+echo "\n=== NÚMEROS DE $inicio ATÉ $fim ===\n";
+
+$pares = [];
+$impares = [];
+
+for ($i = $inicio; $i <= $fim; $i++) {
+    if ($i % 2 == 0) {
+        $pares[] = $i;
+    } else {
+        $impares[] = $i;
+    }
+}
+
+echo "\n🟢 NÚMEROS PARES:\n";
+echo implode(", ", $pares) . "\n";
+
+echo "\n🔴 NÚMEROS ÍMPARES:\n";
+echo implode(", ", $impares) . "\n";
+
+echo "\nTotal de pares: " . count($pares) . "\n";
+echo "Total de ímpares: " . count($impares) . "\n";
+?>
+
