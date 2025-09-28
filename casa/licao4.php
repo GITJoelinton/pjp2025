@@ -30,7 +30,7 @@ $idade = 17;
 echo "Moro na cidade de " . $cidade . "<br>";
 echo "Meu nome é " . $nome . "<br>";
 echo "Minha idade é " . $idade . "<br>";
-?>*/
+?>
 echo "Digite o número inicial: ";
 $inicio = (int)trim(fgets(STDIN));
 
@@ -58,5 +58,15 @@ echo implode(", ", $impares) . "\n";
 
 echo "\nTotal de pares: " . count($pares) . "\n";
 echo "Total de ímpares: " . count($impares) . "\n";
-?>
+?>*/
+/*
+echo"digite a primeira nota";
+$nota1=(int)trim(fgets(STDIN));
+echo"digite a segunda nota";
+$nota2=(int)trim(fgets(STDIN));
+echo"digite a terceira nota";
+$nota3=(int)trim(fgets(STDIN));
+$total=($nota1+$nota2+$nota3)/3;
+echo"sua media e " . $total;*/
+
 
