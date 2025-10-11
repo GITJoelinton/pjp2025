@@ -29,7 +29,7 @@ echo "=== VERIFICADOR DE SEGUNDO SEMESTRE ===\n";
 echo "Digite o número do mês (1-12): ";
 
 // Lê a entrada do usuário
-$numeroMes = (int)trim(fgets(STDIN));
+$numeroMes =12;
 
 // Verifica e exibe o resultado
 $resultado = verificarSegundoSemestre($numeroMes, $mesesSegundoSemestre);

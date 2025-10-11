@@ -1,8 +1,8 @@
 <?php
 echo"digite um mumero";
-$a=(int)trim(fgets(STDIN));
+$a=5;
 echo "digite o segundo numero";
-$b=(int)trim(fgets(STDIN));
+$b=6;
 $soma=$a+$b;
 $subtracao=$a-$b;
 $multiplicacao=$a*$b;
