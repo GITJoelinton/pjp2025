@@ -32,7 +32,7 @@ echo "Meu nome é " . $nome . "<br>";
 echo "Minha idade é " . $idade . "<br>";
 ?>
 echo "Digite o número inicial: ";
-$inicio = (int)trim(fgets(STDIN));
+echo "Digite o número inicial: ";
 
 echo "Digite o número final: ";
 $fim = (int)trim(fgets(STDIN));

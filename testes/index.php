@@ -44,4 +44,4 @@ $alunos = $stmt->fetchAll();
  </thead>
 
 </body>
-</html> 
+</html>
