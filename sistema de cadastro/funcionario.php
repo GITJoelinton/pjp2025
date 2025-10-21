@@ -12,10 +12,10 @@ class Funcionario {
             return $this->salarioBase + $this->bonus;
         }
     }
-$funcionario1 = new funcionario();
+$funcionario1 = new Funcionario();
 $funcionario1->nome = "joelinton";
 $funcionario1->salarioBase = 5000;
-$salariototal = calcularSalario();
+$salarioTotal = $funcionario1->calcularSalario();
 echo "O salário total do funcionário " . $funcionario1->nome . " é: " . $salarioTotal . "\n";
    
 $gerente1 = new gerente();
