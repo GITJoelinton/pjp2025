@@ -18,8 +18,7 @@ class produto {
         $this->quantidade = $quantidade;
     }
 }
-function calcularTotal
-(produto $produto) {
+function calcularTotal(produto $produto) {
     return $produto->preco * $produto->quantidade;
 }
 $produto1 = new produto();
